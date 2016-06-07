@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>پیاده سازی ضعیف در ورود با گوگل! - Ali Borhani</title>
+
+
+<!-- twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@aliborhani1">
+<meta name="twitter:creator" content="@aliborhani1">
+
+<meta name="twitter:title" content="Ali Borhani - ">
+<meta name="twitter:url" content="/sign-in-with-google-poor-implementation-20160121">
+
+    <meta name="twitter:description" content="">
+
+<meta name="twitter:image:src" content="/assets/images/2016-01-21_toggl_login.jpg">
+
+        <!-- CSS -->
+<link rel="stylesheet" href="/assets/css/prism.css">
+<link rel="stylesheet" href="/assets/css/poole.css">
+<link rel="stylesheet" href="/assets/css/syntax.css">
+<link rel="stylesheet" href="/assets/css/lanyon.css">
+
+<!-- Icons -->
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="theme-base-08 layout-reverse">
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73280108-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+        <p>علی برهانی
+<br>
+گاه‌نوشته‌های یک توسعه‌دهنده!</p>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a class="sidebar-nav-item
+                        " href="/">Home</a>
+        <a class="sidebar-nav-item" href="http://twitter.com/aliborhani1">Twitter</a>
+        <a class="sidebar-nav-item" href="http://github.com/alibo">Github</a>
+    </nav>
+
+    <div class="sidebar-item">
+        <p>
+            &copy; 2016. All rights reserved.
+        </p>
+    </div>
+</div>
+
+<!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+     content to avoid any CSS collisions with our real content. -->
+<div class="wrap">
+    <div class="masthead">
+        <div class="container">
+            <h3 class="masthead-title">
+                <a href="/" title="Home">Ali Borhani</a> -
+                <small>گاه&zwnj;نوشته&zwnj;های یک توسعه&zwnj;دهنده!</small>
+            </h3>
+        </div>
+    </div>
+
+    <div class="container content">
+            <div class="post">
+        <h1 class="post-title">پیاده سازی ضعیف در ورود با گوگل!</h1>
+        <span class="post-date">۱ بهمن ۱۳۹۴</span>
+                    <p><img src="/assets/images/2016-01-21_toggl_login.jpg" alt="صفحه لاگین سرویس toggl.com" />
+<em>صفحه لاگین سرویس toggl.com</em></p>
+<p>امروزه بیشتر اپ ها و وبسایت ها به کاربرانشان اجازه می‌دهند با استفاده از اکانت گوگل، فیسبوک، توییتر و ... بتوانند راحت‌تر ثبت نام کرده و وارد اپ یا وبسایت شوند. اما بعضی از پیاده سازی ها نه تنها باعث راحتی کاربر نشده بلکه مشکلات را بیشتر می کنند!</p>
+<!-- more -->
+<p>به عنوان مثال، من در سرویس <a href="https://toggl.com">toggl</a> ثبت‌نام کرده‌ام اما نه از طریق ورود با گوگل، بلکه فرم ثبت نام را پر کردم و ایمیل ارسالی را هم تایید کردم! <em>دلیل اینکه از ورود با گوگل استفاده نکرده ام به خاطر این هست که طراحی قدیمی این سایت دکمه ورود با گوگل را طوری گذاشته بود که براحتی دیده نمی شد!!</em> بگذریم، من با آدرس جیمیل در این سایت ثبت نام کرده ام، در نتیجه انتظارم این هست که می توانم از طریق دکمه ورود با گوگل هم وارد سایت شوم، اما انتظار اشتباهی دارم!!</p>
+<p><img src="/assets/images/2016-01-21_toggl_sign_in_with_google_failed.jpg" alt="خطا در هنگام ورود با گوگل در سرویس toggl" /></p>
+<p>چندین بار تلاش کردم، اما به نتیجه نرسیدم و در حال حاضر مجبورم همیشه با ایمیل و پسورد وارد حسابم شوم!</p>
+<p>مثال دیگر سایتی بود که چند ماه پیش دیدم، متاسفانه آدرس آن یادم نیست، که امکان ورود از طریق چند سایت از جمله گوگل را نیز داشت، من ورود با گوگل را زدم، به سایت بازگشت، حالا پیامی عجیب به من نشان داد:</p>
+<blockquote>
+<p>به اینباکس ایمیل خود رفته و ایمیل خود را تایید کنید!</p>
+</blockquote>
+<p>البته این ترجمه چیزی هست که به یاد می آورم! اولین سوالی که برای من پیش آمد این بود که اگر قرار است که دوباره ایمیل خود را تایید کنم دیگر چه نیازی به استفاده از ورود با گوگل است؟! یعنی مشکل من نوشتن اسم و فامیلم هست؟!!
+کمی در مورد <a href="https://developers.google.com/identity/protocols/OAuth2">API ورود و احراز هویت گوگل</a> تحقیق کردم و خودم آن را تست کردم ببینم چه چیزی را بر می گرداند. بعد از گرفتن <code>access_token</code> و ارسال درخواست <code>GET</code> به <code>https://www.googleapis.com/userinfo/v2/me</code> جواب زیر را گرفتم:</p>
+<pre><code class="language-json">{
+  "family_name": "Borhani",
+  "name": "Ali Borhani",
+  "picture": "https://lh6.googleusercontent.com/-**********/AAAAAAAAAAI/AAAAAAAAAnQ/***********/photo.jpg",
+  "locale": "en",
+  "gender": "male",
+  "email": "aliborhani1&lt;atـgmail&gt;",
+  "link": "https://plus.google.com/+AliBorhani1",
+  "given_name": "Ali",
+  "id": "**********************",
+  "verified_email": true
+}</code></pre>
+<p><em>مقدار ایمیل برای دوستان اسمپر تغییر داده شده!!</em></p>
+<p>مقدار <code>email</code> که همان ایمیل اصلی من هست و در صورتی که از جیمیل استفاده کنم، قابل تغییر نیست. <a href="https://support.google.com/accounts/answer/6316959?p=emails&amp;hl=en&amp;rd=1">اطلاعات بیشتر</a></p>
+<p><code>verified_email</code> هم یکی از فیلدهای جالب هست، اکانت های گوگلی که با استفاده از آدرس جیمیل ایجاد نشده‌اند، نیاز به تایید ایمیلشان هست. <a href="https://support.google.com/accounts/answer/63950?hl=en">اطلاعات بیشتر</a></p>
+<p>حالا برگردیم به مثال اول، آیا نمی توان مقدار ایمیل را در دیتابیس جستجو کرد و کاربر را پیدا کرد!؟ حتما باید ایمیل و پسورد وارد شود هنگامی که گوگل آن را تایید کرده است؟
+اگر از فیسوک و توییتر و گیت‌هاب و ... برای ورود استفاده کنیم، باید حتما کاربر همان وبسایتی را استفاده کند که برای بار اول با آن ثبت‌نام کرده است یا مثل سرویس <a href="https://bitbucket.org/">bitbucket</a>  از هر سرویسی که ایمیل در آن مشترک است، می توان استفاده کرد؟! مطمئنا سناریو آخر، جواب سوال است.</p>
+<p>اما برای مثال دوم، اگر معتبر بودن ایمیل برای ما ضروری است می‌توان <code>verified_email</code> را هم چک کرد، در صورتی که مقدار آن برابر با <code>false</code> باشد، می توان یک ایمیل تایید نیز برای آن آدرس ارسال کرد.</p>
+<hr />
+<p>در نظر گرفتن سناریوهای مختلف، باعث می شود تجربه کاربری بهتری برای کاربرانمان بسازیم. همچنین بهتر است توسعه‌دهندگان با پروتکل هایی مثل OAuth2 و روند احراز هویت و همچنین API ها و مستندات آنها در سرویس‌های مختلف بیشتر آشنا شوند.</p>
+<hr />
+<p>در این زمینه لینک‌های زیر را هم پیشنهاد می‌کنم مشاهده کنید:</p>
+<ul>
+<li><a href="https://developers.google.com/oauthplayground/">Google - OAuth 2.0 Playground</a></li>
+<li><a href="https://developers.google.com/apis-explorer/">Google API Explorer</a></li>
+</ul>
+<p>با دو سرویس بالا راحت می‌توانید API های گوگل را تست کنید، بدون دردسر و خونریزی!!</p>
+<ul>
+<li><a href="https://github.com/laravel/socialite">Laravel Socialite</a></li>
+</ul>
+<p>اگر از فریمورک لاراول استفاده می کنید، پیشنهاد می‌کنم از پکیج رسمی خود لاراول برای ورود با گوگل و سرویس‌های دیگر استفاده کنید و زمان خود را صرف کارهای مهمتر کنید!!</p>
+<p>سرویس‌هایی که پشتبیانی می‌شوند:</p>
+<ul>
+<li>فیسبوک</li>
+<li>گوگل</li>
+<li>توییتر</li>
+<li>لیندکین</li>
+<li>بیت‌باکت</li>
+<li>گیت‌هاب</li>
+</ul>
+<p>همچنین می توانید با implement کردن <a href="https://github.com/laravel/socialite/tree/2.0/src/Contracts">اینترفیس‌های آن</a> ، سایر سرویس‌ها را نیز پوشش دهید.</p>
+                </div>
+
+    <section id="disqus_thread"></section>
+    </div>
+</div>
+
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+<script src="/assets/js/prism.js"></script>
+<script type="text/javascript">
+    var disqus_shortname = 'alibo';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script>
+    (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+            var target = e.target;
+
+            if(!checkbox.checked ||
+                    sidebar.contains(target) ||
+                    (target === checkbox || target === toggle)) return;
+
+            checkbox.checked = false;
+        }, false);
+    })(document);
+</script>
+</body>
+</html>
