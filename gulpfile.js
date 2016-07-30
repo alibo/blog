@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 var argv = require('yargs').argv;
 
-elixir.config.assetsPath = 'content/resources';
+elixir.config.assetsPath = 'content/_includes/assets';
 elixir.config.publicPath = 'content/assets';
 
 elixir(function(mix) {

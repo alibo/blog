@@ -37,7 +37,7 @@
 </div>
 
 <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-<script src="@url('assets/js/prism.js')"></script>
+<script src="@url('assets/js/all.js')"></script>
 <script type="text/javascript">
     var disqus_shortname = '{{ $disqusShortname }}';
     (function() {

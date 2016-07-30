@@ -30,11 +30,9 @@
 <meta name="twitter:image:src" content="@url('assets/images/')@yield('post::image')">
 @endif
 
-        <!-- CSS -->
-<link rel="stylesheet" href="@url('assets/css/prism.css')">
-<link rel="stylesheet" href="@url('assets/css/poole.css')">
-<link rel="stylesheet" href="@url('assets/css//syntax.css')">
-<link rel="stylesheet" href="@url('assets/css/lanyon.css')">
+<!-- CSS -->
+<link rel="stylesheet" href="@url('assets/css/all.css')">
+
 
 <!-- Icons -->
 <link rel="shortcut icon" href="@url('assets/favicon.ico')" type="image/x-icon">
