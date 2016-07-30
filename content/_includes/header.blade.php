@@ -17,13 +17,18 @@
 <meta name="twitter:site" content="@aliborhani1">
 <meta name="twitter:creator" content="@aliborhani1">
 
-<meta name="twitter:title" content="{{ $siteName }} - @yield('pageTitle')">
+@hasSection('post::title')
+	<meta name="twitter:title" content="@yield('post::title') - {{$siteName}}">
+@else
+    <meta name="twitter:title" content="@yield('pageTitle', $siteTagLine) - {{$siteName}}">
+@endif
+
 <meta name="twitter:url" content="{{ $currentUrlPath }}">
 
 @hasSection('post::brief')
-<meta name="twitter:description" content="{{ $siteDescription }}">
-@else
     <meta name="twitter:description" content="@yield('post::brief')">
+@else
+	<meta name="twitter:description" content="{{ $siteDescription }}">
 @endif
 
 @hasSection('post::image')
