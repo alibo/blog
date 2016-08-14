@@ -4,9 +4,9 @@
   xml:lang="fa-IR">
 
  <title>{{ $siteName }}</title>
- <link href="http://borhani.pw/feed.rss" type="application/atom+xml" rel="self"/>
- <link href="http://borhani.pw/" rel="alternate" type="text/html" />
- <id>https://borhani.pw</id>
+ <link href="https://borhani.pw/feed.rss" type="application/atom+xml" rel="self"/>
+ <link href="https://borhani.pw/" rel="alternate" type="text/html" />
+ <id>https://borhani.pw/</id>
 
 @foreach($blogPosts as $post)
  <entry>
