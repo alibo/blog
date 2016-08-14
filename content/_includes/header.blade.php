@@ -32,7 +32,7 @@
 @endif
 
 @hasSection('post::image')
-<meta name="twitter:image:src" content="https://borhani.pw/assets/images/@yield('post::image')">
+    <meta name="twitter:image" content="https://borhani.pw/assets/images/@yield('post::image')">
 @endif
 
 <!-- CSS -->
