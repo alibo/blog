@@ -59,6 +59,8 @@ return [
      * the blade views.
      *
      */
+    
+    'rssFeedView' => 'rss',
 
     'siteName' => 'Ali Borhani',
 

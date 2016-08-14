@@ -2,7 +2,8 @@
 view::extends: _includes.blog_post_base
 view::yields: post_body
 post::title: اطلاعات غلط، نتایج اشتباه!
-post::date: ۳۰ دی ۱۳۹۴
+post::jalali_date: ۳۰ دی ۱۳۹۴
+post::date: 2016-01-20
 post::tags:
         - اشتباه
         - خودمانی

@@ -2,7 +2,8 @@
 view::extends: _includes.blog_post_base
 view::yields: post_body
 post::title: پیاده سازی ضعیف در ورود با گوگل!
-post::date: ۱ بهمن ۱۳۹۴
+post::jalali_date: ۱ بهمن ۱۳۹۴
+post::date: 2016-01-21
 post::image: 2016-01-21_toggl_login.jpg
 post::tags:
         - sign-in with google

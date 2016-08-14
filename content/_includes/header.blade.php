@@ -11,6 +11,8 @@
     <title>@yield('pageTitle', $siteTagLine) - {{$siteName}}</title>
 @endif
 
+<link rel="alternate" type="application/rss+xml" title="RSS"
+      href="@url('/feed.rss')">
 
 <!-- twitter -->
 <meta name="twitter:card" content="summary">

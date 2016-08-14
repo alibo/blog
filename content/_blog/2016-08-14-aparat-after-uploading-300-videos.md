@@ -2,7 +2,8 @@
 view::extends: _includes.blog_post_base
 view::yields: post_body
 post::title: آپارات بعد از آپلود ۳۰۰ ویدیو! - تجربه شخصی من
-post::date: ۲۴ مرداد ۱۳۹۵
+post::jalali_date: ۲۴ مرداد ۱۳۹۵
+post::date: 2016-08-14
 post::image: 2016-08-14-aparat.jpg
 post::brief: تجربه شخصی من بعد از آپلود ۳۰۰ ویدیو در سرویس ایرانی آپارات
 post::tags:

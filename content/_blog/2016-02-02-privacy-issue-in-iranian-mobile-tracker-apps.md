@@ -2,7 +2,8 @@
 view::extends: _includes.blog_post_base
 view::yields: post_body
 post::title: ردیابی شماره موبایل، ما حریم خصوصی شما را نقض می‌کنیم!
-post::date: ۱۳ بهمن ۱۳۹۴
+post::jalali_date: ۱۳ بهمن ۱۳۹۴
+post::date: 2016-02-02
 post::image: 2016-02-02_mobile_tracker_cafebazaar.jpg
 post::tags:
         - mobile tracker

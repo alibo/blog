@@ -11,7 +11,7 @@
                     </a>
                 </h1>
 
-                <span class="post-date">{{ $post->date }}</span>
+                <span class="post-date">{{ $post->jalali_date }}</span>
                 {!! explode('<!-- more -->', $post->body)[0] !!}
                 <p>
                     <a href="@url($post->path)" role="button">ادامه مطلب ... <i
